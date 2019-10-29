@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Obtener información sobre IP</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+
+    <body>
+        <div>
+            <h3>Estadísticas</h3>
+            <p class="averageDistance">Distancia promedio: </p>
+            <p class="minDistance">Distancia mínima: </p>
+            <p class="maxDistance">Distancia máxima: </p>
+            <button onclick="refreshStats()">Actualizar estadísticas</button> <p class="statsMsg"></p>
+            <button onclick="deleteStats()">Borrar estadísticas</button> (Se borrará la información sobre TODAS las invocaciones al servicio!)<br>
+            <br>
+            <hr>
+            <h3>Obtener información sobre dirección IP</h3>
+            Ingrese la dirección IP: <input name="ip" id="ip" class="ip">
+            <button onclick="getIpData(document.getElementById('ip').value)">Obtener información</button>
+            <p class="ipAddress">Dirección IP: </p>
+            <p class="countryName">Nombre del país: </p>
+            <p class="countryCode">ISO code del país: </p>
+            <p class="currency">Moneda: </p>
+            <p class="currencyRate"></p>
+            <p class="distance">Distancia aproximada a Buenos Aires (km): </p>
+            <p class="times">Hora: </p>
+            <p class="languages">Idiomas: </p>
+            <p class="errors"></p>
+        </div>
+    </body>
+</html>
