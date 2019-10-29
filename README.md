@@ -38,6 +38,8 @@ La API está desarrollada en Java, utilizando Spring Boot. Expone unos endpoints
 
 La UI es bastante simple, se desarrolló en HTML y JavaScript. Se aprovecha Tomcat para servir contenido estático (archivos .html y .js). Su objetivo es proveer una interfaz para utilizar la API.
 
+Se utiliza Redis para almacenar información sobre las invocaciones al servicio (para generar las estadísticas).
+
 ### Interfaz de usuario (UI):
 La aplicación presenta una simple UI para interactuar con ella.
 
