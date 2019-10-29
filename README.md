@@ -13,7 +13,7 @@ La aplicación corre en el puerto 8080. Se puede modificar el port binding en el
 
 Redis corre en el puerto 6379 (el puerto está bindeado al puerto del host por si se quiere inspeccionar la bd desde un cliente, pero no es necesario para el funcionamiento de la app). Si hay conflicto, modificar o eliminar el puerto en el archivo `docker-compose.yml` (`ports` property).
 
-Se utiliza un Volume para que la información de Redis quede persistida. Se creará una carpeta `data` cuando se levante el container (en el directorio del proyecto).
+Se utiliza un Volume para que la información de Redis quede persistida. Se creará una carpeta `data` cuando se levante el container (en el directorio del proyecto). Hay que habilitar *Shared Drives* en Docker para que el volume funcione.
 
 ### Pasos para instalar:
 1) Clonar el repo en local: `git clone https://github.com/pabca/challenge.git`
