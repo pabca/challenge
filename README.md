@@ -1,4 +1,4 @@
-# Challenge MELI - Pablo Cammarano
+# Challenge MELI
 
 ### Aplicación:
 La presente aplicación provee información sobre una dirección IP y brinda estadísticas sobre la utilización del servicio.
